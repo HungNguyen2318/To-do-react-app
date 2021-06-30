@@ -58,7 +58,7 @@ function App() {
           appearance='primary'
           onClick={onAddBtnClick}
         >
-          Add
+          Thêm
         </Button>
       }
         css={{ padding: "2px 4px 2px" }}
