@@ -45,11 +45,13 @@ function App() {
         todo.id === id ? { ...todo, isCompleted: true } : todo
       )
     );
-  },[]);
+  }, []);
 
   return (
     <>
-      <h3>Danh sach can lam</h3>
+      <h3>
+        Danh sach can lam
+      </h3>
       <Textfield name='add-todo' placeholder='Them viec can lam...' elemAfterInput={
         <Button
           isDisabled={!textInput}
@@ -63,7 +65,7 @@ function App() {
         value={textInput}
         onChange={onTextInputChange}
       ></Textfield>
-      <TodoList todoList={todoList} onCheckBtnClick={onCheckBtnClick}/>
+      <TodoList todoList={todoList} onCheckBtnClick={onCheckBtnClick} />
     </>
   );
 }
